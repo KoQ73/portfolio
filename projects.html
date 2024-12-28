@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <style>
+        /* Reset and General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: #f5f5f5;
+            color: #000;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .project {
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 5px;
+            margin: 15px 0;
+            padding: 20px;
+        }
+
+        .project h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .project p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 1rem;
+            text-decoration: none;
+            color: #000;
+            border-bottom: 2px solid #000;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .project a:hover {
+            color: #555;
+            border-color: #555;
+        }
+
+        img {
+            display: block;
+            margin: 15px auto;
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .back-to-home {
+            display: block;
+            margin: 30px auto;
+            padding: 15px 30px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #000;
+            border-radius: 5px;
+            text-align: center;
+            width: fit-content;
+            transition: background 0.3s, color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-to-home:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 20px 0;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+    </header>
+
+    <div class="container">
+        <div class="project">
+            <h2>Expresso Face Animation</h2>
+            <p>Collaborated with my team to develop a facial animation model capable of generating diverse expressions such as happiness, sadness, and more. Leveraged GANs and curated datasets to enhance realism. Integrated Firebase for seamless cloud-based storage and implemented a subscription model to manage access, ensuring scalable and efficient usage.</p>
+            <p>Website: <a href="https://uowfyp-24-s3-01.vercel.app/">Expresso</a></p>
+            <p><b>Skills</b>: Firebase, PyTorch, React, Vercel</p>
+        </div>
+        <div class="project">
+            <h2>Car Sale Website</h2>
+            <img src="./images/car.png" alt="Car Sale Website">
+            <p>Collaborated with my team to develop a website following the MVC pattern, with a primary focus on responsive design and an engaging UI/UX experience. The platform enables buyers, sellers, and agents to seamlessly buy, sell, shortlist, and manage listings, offering a user-friendly and feature-rich experience.</p>
+            <p><b>Skills</b>: Java, JavaScript, Spring Boot, SQL, Bootstrap</p>
+        </div>
+        <div class="project">
+            <h2>My Games</h2>
+            <p>A collection of games I developed in my free time, spanning various genres such as card games, side-scrollers, roguelikes, and remakes of classic titles like Mario and Zelda. Each game showcases my creativity and passion for game design.</p>
+            <p><b>Skills</b>: Unity, Maya, Lua, C#</p>
+        </div>
+        <div class="project">
+            <h2>VR Projects</h2>
+            <img src="./images/VR.png" alt="VR Projects">
+            <p>Focused on designing intuitive UI and seamless UX to create immersive and engaging virtual reality experiences.</p>
+            <p><b>Skills</b>: Unity, Maya, C#, C++, OpenGL</p>
+        </div>
+        <div class="project">
+            <h2>Others in My GitHub</h2>
+            <p>Discover more of my projects, including Android mobile development and other courses I’ve completed, along with the source code, on my <a href="https://github.com/KoQ73">GitHub profile</a>.</p>
+        </div>
+    </div>
+
+    <a class="back-to-home" href="index.html">Back to Home</a>
+
+    <footer>
+        <p>Check out my work on <a href="https://github.com/KoQ73">GitHub profile 1</a> or <a href="https://github.com/KoQ3o5">GitHub profile 2</a>.</p>
+    </footer>
+</body>
+</html>

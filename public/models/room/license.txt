@@ -1,0 +1,11 @@
+Model Information:
+* title:	The Magic Room
+* source:	https://sketchfab.com/3d-models/the-magic-room-c7ef79f3c472494db5224d28b8ae417b
+* author:	thcyrax (https://sketchfab.com/kitsunegraphics)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "The Magic Room" (https://sketchfab.com/3d-models/the-magic-room-c7ef79f3c472494db5224d28b8ae417b) by thcyrax (https://sketchfab.com/kitsunegraphics) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
