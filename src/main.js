@@ -14,7 +14,7 @@ const DEFAULT_COLOR = 0x36a9c8;
 function init() {
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.set(150, 120, 120);
+    camera.position.set(150, 200, 80);
 
     renderer = new THREE.WebGLRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -27,8 +27,8 @@ function init() {
     initControls();
     loadModel();
     addCyberpunkText();
-    createNeonSignBoard('Projects', -50, 90, 90);
-    createNeonSignBoard('About Me', -50, 80, 90);
+    createNeonSignBoard('Projects', -50, 90, 40);
+    createNeonSignBoard('About Me', -50, 80, 40);
 
     animate();
     window.addEventListener('resize', onWindowResize);
@@ -75,7 +75,7 @@ function loadModel() {
         function (gltf) {
             const object = gltf.scene;
             object.scale.set(0.5, 0.5, 0.5);
-            object.position.set(0, 0, 50);
+            object.position.set(0, 0, 0);
             scene.add(object);
         }, 
         function (xhr) {
