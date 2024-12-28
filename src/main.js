@@ -242,7 +242,7 @@ function transitionToHTMLPage(s) {
         // Wait for the fade-out animation to complete
         setTimeout(() => {
             // Navigate to a new HTML page
-            window.location.href = "projects.html";
+            window.location.href = "./projects.html";
         }, 1000); // Match the transition duration
     } else if (s === "About Me") {
         // Fade out the canvas
@@ -252,7 +252,7 @@ function transitionToHTMLPage(s) {
         // Wait for the fade-out animation to complete
         setTimeout(() => {
             // Navigate to a new HTML page
-            window.location.href = "about.html";
+            window.location.href = "./about.html";
         }, 1000); // Match the transition duration
     }
 }
