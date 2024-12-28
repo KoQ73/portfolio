@@ -34,6 +34,9 @@ function init() {
     window.addEventListener('resize', onWindowResize);
     window.addEventListener('mousemove', onMouseMove);
     window.addEventListener('click', onClick);
+    window.addEventListener('touchstart', onTouchStart);
+    window.addEventListener('touchmove', onTouchMove);
+    window.addEventListener('touchend', onTouchEnd);
 }
 
 function initLighting() {
@@ -255,6 +258,52 @@ function transitionToHTMLPage(s) {
             window.location.href = "./about.html";
         }, 1000); // Match the transition duration
     }
+}
+
+function onTouchStart(event) {
+    const touch = event.touches[0]; // Get the first touch point
+    pointer.x = (touch.clientX / window.innerWidth) * 2 - 1;
+    pointer.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+
+    raycaster.setFromCamera(pointer, camera);
+    const intersects = raycaster.intersectObjects(scene.children);
+
+    if (intersects.length > 0) {
+        const touchedObject = intersects[0].object;
+        if (interactable.includes(touchedObject)) {
+            handleObjectInteraction(touchedObject);
+        }
+    }
+}
+
+function onTouchMove(event) {
+    const touch = event.touches[0]; // Get the first touch point
+    pointer.x = (touch.clientX / window.innerWidth) * 2 - 1;
+    pointer.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+
+    raycaster.setFromCamera(pointer, camera);
+    const intersects = raycaster.intersectObjects(scene.children);
+
+    if (intersects.length > 0) {
+        const hoveredObject = intersects[0].object;
+        highlightObject(hoveredObject);
+    }
+}
+
+function highlightObject(object) {
+    interactable.forEach((item) => {
+        if (item === object) {
+            item.material.color.set(0xffffff);
+        } else {
+            item.material.color.set(DEFAULT_COLOR);
+        }
+    });
+}
+
+function handleObjectInteraction(object) {
+    const objectName = object.name;
+    console.log(`Interacting with: ${objectName}`);
+    transitionToHTMLPage(objectName);
 }
 
 init();
